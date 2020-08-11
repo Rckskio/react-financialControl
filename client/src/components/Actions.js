@@ -27,7 +27,7 @@ export default function Actions({
     <div style={containerStyle}>
       <button
         className="waves-effect waves-light btn"
-        disabled={filterText.trim() !== ''}
+        disabled={filterText.trim() !== '' || filterCategory.trim() !== ''}
         onClick={handleButtonClick}
       >
         + New Transaction
